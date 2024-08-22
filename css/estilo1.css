@@ -1,0 +1,193 @@
+.menu-bar {
+  position: fixed; /* Fixa o menu no topo da página */
+  top: 0; /* Posiciona no topo */
+  left: 0; /* Começa na esquerda */
+  width: 100%; /* Ocupa toda a largura da tela */
+  height: 165px; /* Altura da faixa */
+  background-color: #f0fff0; /* Cor verde quase branco */
+  display: flex;
+  justify-content: space-between; /* Logo à esquerda, menu à direita */
+  font-family: Inter, var(--default-font-family);
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  padding: 0 4px; /* Adiciona espaçamento lateral */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  z-index: 10; /* Garante que a barra fique sobre os outros elementos */
+}
+
+.logo {
+  max-height: 130px;
+  border-radius: 80px;
+  margin: 5px;
+}
+
+.h11 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-68%);
+  margin-top: 0; /* Remove margem superior extra */
+  text-align: center;
+  width: auto; /* Remove a largura total */
+  font-size: 39px;
+  font-weight: bold;
+  font-family: Inter, var(--default-font-family);
+}
+
+.menu-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Espaçamento entre os itens do menu */
+}
+
+.menu-bar ul li {
+  display: inline;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #333; /* Cor dos links */
+  padding: 10px 15px;
+}
+
+.menu-bar ul li a:hover {
+  color: #007bff; /* Cor ao passar o mouse */
+}
+
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  max-width: 1887px;
+  height: 920px;
+  margin: 0 auto;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(pexel.jpg) no-repeat center;
+  background-size: cover;
+  filter: brightness(0.6); /* Escurece apenas a imagem de fundo */
+  z-index: 1; /* Fica abaixo do conteúdo */
+}
+
+.cuidado-com-o-am {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* O elemento será posicionado de forma absoluta */
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza na vertical e horizontal */
+  color: #dee2dd; /* Cor do texto */
+  font-family: Inter, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  z-index: 2; /* Garante que o texto fique acima da imagem */
+  background: rgba(255, 255, 255, 0); /* Sem cor de fundo para o texto */
+}
+
+
+/**/
+
+.image-7 {
+  position: relative;
+  width: 100%; /* Ajusta para 100% do container */
+  height: 100%;
+}
+
+.background-8 {
+  position: relative;
+  width: 107px;
+  height: 2px;
+  margin: 23px 0 0 585px;
+  background: url()
+    no-repeat center;
+  background-size: cover;
+  z-index: 6;
+}
+
+.flex-row-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.limpeza-higieni {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* O elemento será posicionado de forma absoluta */
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza na vertical e horizontal */
+  color: #f0f2ef;
+  font-family: Inter, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  z-index: 5;
+}
+
+.image-9 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  bottom: 3px;
+  background: url()
+    no-repeat center;
+  background-size: cover;
+  z-index: 4;
+  border-radius: 30px;
+}
+.groups-a {
+  position: absolute;
+  width: 1342px;
+  height: 496px;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #f0fff0;
+}
